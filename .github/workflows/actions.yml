@@ -11,6 +11,7 @@ jobs:
           pwd
           ls -a
           echo $GITHUB_SHA
+          echo "Work space:" $GITHUB_WORKSPACE
           echo "${{ github.token }}"
       - name: checkout files
         uses: actions/checkout@v1
