@@ -11,7 +11,7 @@ jobs:
           pwd
           ls -a
           echo $GITHUB_SHA
-          echo "{{ github.token }}"
+          echo "${{ github.token }}"
       - name: checkout files
         uses: actions/checkout@v1
       - name: List Files after checkout
