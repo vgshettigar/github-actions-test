@@ -1,11 +1,10 @@
 name: Actions workflow
 
 on: 
-  push: 
+  #push: 
+  repository_dispatch: 
+    types: [build]
   pull_request: 
-    types:
-      - opened
-  issues:
     types:
       - opened
 
